@@ -3,17 +3,17 @@ import java.util.*;
 public class Bioskop {
     public static void main(String[] args) {
         Map<String, Film> jadwal = new HashMap<>();
-        jadwal.put("F01", new Film("Spiderman", 55000));
-        jadwal.put("F02", new Film("Batman", 50000));
-        jadwal.put("F03", new Film("Superman", 45000));
+        jadwal.put("F01", new Film("Harry Potter", 55000));
+        jadwal.put("F02", new Film("The Twilight", 50000));
+        jadwal.put("F03", new Film("The Vampire Diaries", 45000));
 
         Set<String> kursiTerpakai = new HashSet<>();
         List<Tiket> riwayatTiket = new ArrayList<>();
 
-        pesanTiket("Andi",  "F01", "A1", jadwal, kursiTerpakai, riwayatTiket);
-        pesanTiket("Rini",  "F02", "B4", jadwal, kursiTerpakai, riwayatTiket);
-        pesanTiket("Tono",  "F03", "C2", jadwal, kursiTerpakai, riwayatTiket);
-        pesanTiket("Dewi",  "F01", "A1", jadwal, kursiTerpakai, riwayatTiket);
+        pesanTiket("Neila",  "F01", "A1", jadwal, kursiTerpakai, riwayatTiket);
+        pesanTiket("Zakia",  "F02", "B2", jadwal, kursiTerpakai, riwayatTiket);
+        pesanTiket("Elisabeth",  "F03", "C3", jadwal, kursiTerpakai, riwayatTiket);
+        pesanTiket("Intan",  "F01", "A1", jadwal, kursiTerpakai, riwayatTiket);
 
         for (Tiket t : riwayatTiket) {
             t.cetakDetail();
